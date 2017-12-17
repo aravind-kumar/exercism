@@ -1,6 +1,6 @@
 ;;; hello-world.el --- Hello World Exercise (exercism)
 
-;;; Commentary:
+;;; Commentary: This code is used to hello world,it uses optional arguement arg and checks if its non-empty and prints the text
 
 ;;; Code:
 
@@ -9,6 +9,7 @@
 
 (defun hello (&optional arg)
   (if arg
-      (princ (format "Hello, %s!" arg))
-   (princ "Hello,World!"))
+      (print (format "Hello, %s!" arg))
+    (print "Hello, World!")))
+
 ;;; hello-world.el ends here
