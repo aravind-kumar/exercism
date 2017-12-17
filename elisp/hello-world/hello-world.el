@@ -7,10 +7,8 @@
 
 (provide 'hello-world)
 
-(defun hello ()
-  (princ "Hello,World!"))
-
-(defun hello (a)
-  (princ (format "Hello, %s!" a)))
-
+(defun hello (&optional arg)
+  (if arg
+      (princ (format "Hello, %s!" arg))
+   (princ "Hello,World!"))
 ;;; hello-world.el ends here
